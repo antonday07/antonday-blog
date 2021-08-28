@@ -45,11 +45,14 @@ module.exports = {
             h1: {
               fontWeight: '700',
               letterSpacing: theme('letterSpacing.tight'),
+              marginBottom: '15px',
               color: theme('colors.gray.900'),
             },
             h2: {
               fontWeight: '700',
               letterSpacing: theme('letterSpacing.tight'),
+              marginBottom: '10px',
+              marginTop: '15px',
               color: theme('colors.gray.900'),
             },
             h3: {

@@ -6,6 +6,7 @@ import Image from '@/components/Image'
 import Tag from '@/components/Tag'
 import siteMetadata from '@/data/siteMetadata'
 import Comments from '@/components/comments'
+import Disqus from "disqus-react"
 
 const editUrl = (fileName) => `${siteMetadata.siteRepo}/blob/master/data/blog/${fileName}`
 const discussUrl = (slug) =>
@@ -16,7 +17,14 @@ const discussUrl = (slug) =>
 const postDateTemplate = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }
 
 export default function PostLayout({ frontMatter, authorDetails, next, prev, children }) {
-  const { slug, fileName, date, title, tags } = frontMatter
+  const { id, slug, fileName, date, title, tags } = frontMatter
+
+  const disqusShortname = "anhquangtong"
+    const disqusConfig = {
+      url: "https://anhquangtong.me",
+      identifier: id,
+      title: title,
+    }
 
   return (
     <SectionContainer>
@@ -86,11 +94,16 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
             <div className="divide-y divide-gray-200 dark:divide-gray-700 xl:pb-0 xl:col-span-3 xl:row-span-2">
               <div className="pt-10 pb-8 prose dark:prose-dark max-w-none">{children}</div>
               <div className="pt-6 pb-6 text-sm text-gray-700 dark:text-gray-300">
-                <Link href={discussUrl(slug)} rel="nofollow">
+                <Disqus.DiscussionEmbed
+                  shortname={disqusShortname}
+                  config={disqusConfig}
+                />
+                    
+                {/* <Link href={discussUrl(slug)} rel="nofollow">
                   {'Discuss on Twitter'}
                 </Link>
-                {` • `}
-                <Link href={editUrl(fileName)}>{'View on GitHub'}</Link>
+                {` • `} */}
+                {/* <Link href={editUrl(fileName)}>{'View on GitHub'}</Link> */}
               </div>
               <Comments frontMatter={frontMatter} />
             </div>
@@ -148,3 +161,4 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
     </SectionContainer>
   )
 }
+
