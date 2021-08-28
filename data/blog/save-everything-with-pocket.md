@@ -1,5 +1,5 @@
 ---
-id: 1630131227742
+id: '1630131227742'
 title: Lưu lại mọi thứ bạn đọc
 date: '2021-08-28'
 tags: ['productivity']

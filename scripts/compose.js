@@ -33,7 +33,7 @@ const genFrontMatter = (answers) => {
   const authorArray = answers.authors.length > 0 ? "'" + answers.authors.join("','") + "'" : ''
 
   let frontMatter = dedent`---
-  id: ${Date.now()}
+  id: ${(Date.now()).toString()}
   title: ${answers.title ? answers.title : 'Untitled'}
   date: '${date}'
   tags: [${answers.tags ? tags : ''}]
