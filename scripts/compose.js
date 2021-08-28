@@ -35,7 +35,7 @@ const genFrontMatter = (answers) => {
   const tags = "'" + tagArray.join("','") + "'"
   const authorArray = answers.authors.length > 0 ? "'" + answers.authors.join("','") + "'" : ''
   const uniqueId = generateID()
-  
+
   let frontMatter = dedent`---
   id: ${uniqueId}
   title: ${answers.title ? answers.title : 'Untitled'}
