@@ -19,7 +19,7 @@ const postDateTemplate = { weekday: 'long', year: 'numeric', month: 'long', day:
 export default function PostLayout({ frontMatter, authorDetails, next, prev, children }) {
   const { id, slug, fileName, date, title, tags } = frontMatter
 
-  const disqusShortname = 'anhquangtong'
+  const disqusShortname = 'DailyTech'
   const disqusConfig = { url: 'https://anhquangtong.me', identifier: id, title: title }
 
   return (
