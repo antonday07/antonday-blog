@@ -20,11 +20,7 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
   const { id, slug, fileName, date, title, tags } = frontMatter
 
   const disqusShortname = 'anhquangtong'
-    const disqusConfig = {
-      url: 'https://anhquangtong.me',
-      identifier: id,
-      title: title,
-    }
+  const disqusConfig = { url: 'https://anhquangtong.me', identifier: id, title: title }
 
   return (
     <SectionContainer>
