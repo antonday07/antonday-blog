@@ -1,5 +1,5 @@
 ---
-id: '1630131227742'
+id: _tzr7vj5dh
 title: Lưu lại mọi thứ bạn đọc
 date: '2021-08-28'
 tags: ['productivity']
@@ -34,7 +34,6 @@ Một điểm mạnh nữa là Pocket có cả ứng dụng trên điện thoạ
 
 ## Tóm lại
 Với những người thích đọc, quản lý cách tiếp nhận thông tin, thì mình nghĩ Pocket là ứng dụng must have mà các bạn nên có trên máy tính hoặc điện thoại của mình. Chúc các bạn một ngày tốt lành 🤟
-
 
 
 

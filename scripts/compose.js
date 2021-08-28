@@ -19,6 +19,9 @@ const getLayouts = () => {
     .filter((file) => file.toLowerCase().includes('post'))
   return layoutList
 }
+const generateID = () => {
+  return '_' + Math.random().toString(36).substr(2, 9);
+};
 
 const genFrontMatter = (answers) => {
   let d = new Date()
@@ -31,9 +34,10 @@ const genFrontMatter = (answers) => {
   tagArray.forEach((tag, index) => (tagArray[index] = tag.trim()))
   const tags = "'" + tagArray.join("','") + "'"
   const authorArray = answers.authors.length > 0 ? "'" + answers.authors.join("','") + "'" : ''
-
+  const uniqueId = generateID()
+  
   let frontMatter = dedent`---
-  id: ${(Date.now()).toString()}
+  id: ${uniqueId}
   title: ${answers.title ? answers.title : 'Untitled'}
   date: '${date}'
   tags: [${answers.tags ? tags : ''}]
