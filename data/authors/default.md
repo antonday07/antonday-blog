@@ -1,6 +1,6 @@
 ---
 name: Anh Quang Tong
-avatar: /static/images/i-like-you-small.png
+avatar: /static/images/avatar.png
 occupation: Software Engineer
 company: Hanoi Open University
 email: anhquangtong2000@gmail.com
