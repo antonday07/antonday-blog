@@ -34,3 +34,8 @@
 html {
   scroll-behavior: smooth;
 }
+
+.clap-button {
+  font-size: 22px;
+  margin-top: 20px;
+}
