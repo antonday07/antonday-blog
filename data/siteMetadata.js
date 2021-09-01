@@ -5,7 +5,7 @@ const siteMetadata = {
   description: 'Bài viết mới nhất',
   language: 'vi',
   siteUrl: 'https://anhquangtong.me',
-  siteRepo: 'https://github.com/timlrx/tailwind-nextjs-starter-blog',
+  siteRepo: 'https://github.com/antonday07/antonday-blog',
   siteLogo: '/static/images/logo.png',
   image: '/static/images/avatar.png',
   socialBanner: '/static/images/banner.png',
