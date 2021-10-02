@@ -1,8 +1,8 @@
 const siteMetadata = {
-  title: 'Your friend digital garden',
+  title: "Garden của Quang Anh",
   author: 'Anh Quang Tong',
   headerTitle: 'Anh Quang Tong',
-  description: 'Bài viết mới nhất',
+  description: 'Những suy nghĩ thoáng qua của Quang Anh',
   language: 'vi',
   siteUrl: 'https://anhquangtong.me',
   siteRepo: 'https://github.com/antonday07/antonday-blog',
